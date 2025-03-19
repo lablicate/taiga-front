@@ -31,7 +31,10 @@
         text-align: center;
         width: 100%;
         svg {
+            border: solid 1px;
+            border-radius: .2rem;
             height: 8rem;
+            padding: .3rem;
             width: 8rem;
         }
     }

@@ -1,7 +1,7 @@
 $dropdown-width: 260px;
 
 .navbar {
-    background-color: $color-gray400;
+    background-color: $lablicate-red;
     display: flex;
     height: $navbar;
     justify-content: space-between;
@@ -26,6 +26,7 @@ $dropdown-width: 260px;
             justify-content: center;
             & a {
                 align-items: center;
+                color: $color-white;
                 display: flex;
                 justify-content: center;
             }
@@ -38,7 +39,11 @@ $dropdown-width: 260px;
             svg {
                 @include svg-size(2.2rem);
 
+                background: $color-white;
+                border-radius: .2rem;
                 fill: $color-black600;
+                padding: .3rem;
+                width: 6rem;
             }
         }
     }
@@ -62,13 +67,13 @@ $dropdown-width: 260px;
         }
         svg {
             @include svg-size(1.3rem);
-            fill: $color-link-primary;
+            fill: $color-white;
             margin-top: .25rem;
             transition: all .2s linear;
         }
         [tg-dropdown-notifications] {
             & svg {
-                fill: $color-link-primary;
+                fill: $color-white;
             }
 
             &:hover svg {
@@ -210,6 +215,10 @@ $dropdown-width: 260px;
     &.navigation-help {
         tg-svg {
             margin-top: 0;
+
+            svg {
+                fill: $color-black600;
+            }
         }
     }
     &.dropdown-user {

@@ -90,26 +90,26 @@
 
     &:hover {
         .dropdown-project-list-projects {
-            background-color: $color-gray200;
+            background-color: $loading-color-4;
             span {
-                color: $color-link-tertiary;
+                color: $color-white;
             }
 
             .icon-folder {
-                fill: $color-link-tertiary;
+                fill: $color-white;
             }
         }
     }
 
     &.active {
         .dropdown-project-list-projects {
-            background-color: $color-gray200;
+            background-color: $loading-color-4;
             span {
-                color: $color-link-primary;
+                color: $color-white;
             }
 
             .icon-folder {
-                fill: $color-link-primary;
+                fill: $color-white;
             }
         }
     }
@@ -123,7 +123,7 @@
     padding: .25rem .5rem;
 
     span {
-        color: $color-link-primary;
+        color: $color-white;
         font-size: .9rem;
     }
 
@@ -139,7 +139,7 @@
         margin: .1rem .25rem 0 0;
 
         svg {
-            fill: $color-link-primary;
+            fill: $color-white;
             @include svg-size(.9rem);
         }
     }
